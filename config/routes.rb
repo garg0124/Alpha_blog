@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
   # OR
    resources :articles
+   get 'signup', to: 'users#new'
 end
