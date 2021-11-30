@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # OR
    resources :articles
    get 'signup', to: 'users#new'
+   resources :users, except: [:new]
 end
